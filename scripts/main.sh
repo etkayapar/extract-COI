@@ -9,6 +9,7 @@ genome_paths=$1 ## path to a text file with full paths to assemblies
 threads=$2 ## number of independent parallel processes to run
 
 scr_root=$(dirname "$0")
+scr_root=$(realpath "$scr_root")
 
 ## Create blast databases ------------------------------------------
 mkdir -p databases
